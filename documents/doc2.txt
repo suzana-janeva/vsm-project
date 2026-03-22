@@ -1,0 +1,42 @@
+Information Retrieval and Search Engines
+========================================
+
+Information retrieval is the process of obtaining relevant information from a large collection of unstructured documents.
+The goal of an information retrieval system is to find material that satisfies an information need from within large collections.
+Search engines like Google, Bing, and DuckDuckGo are large-scale information retrieval systems used by billions of people daily.
+
+The Vector Space Model (VSM) represents both documents and queries as vectors in a high-dimensional term space.
+In VSM, each unique term in the corpus corresponds to one dimension of the vector space.
+Documents that are more similar to the query will have vectors that point in a similar direction in the vector space.
+
+TF (Term Frequency) measures how often a specific term appears in a document relative to the total number of words in that document.
+A high TF value means the term appears frequently in the document and is likely important to its content.
+IDF (Inverse Document Frequency) measures how rare or common a term is across all documents in the entire corpus.
+Terms that appear in every document have a low IDF because they carry little discriminating information.
+TF-IDF is the product of TF and IDF and is one of the most important weighting schemes in information retrieval.
+A high TF-IDF score means the term is frequent in that specific document but rare across the whole collection.
+
+Cosine similarity measures the cosine of the angle between two vectors in the vector space.
+A cosine similarity of 1.0 means the two vectors point in exactly the same direction and are perfectly similar.
+A cosine similarity of 0.0 means the two vectors are orthogonal and share no common terms at all.
+Cosine similarity is preferred over Euclidean distance because it is independent of document length.
+
+Apache Lucene is a high-performance, full-featured text search engine library originally written in Java by Doug Cutting.
+Lucene implements the Vector Space Model and BM25 algorithm for ranking documents by relevance to a query.
+ZendSearch Lucene is a PHP port of Apache Lucene that allows PHP developers to build full-text search applications.
+Lucene uses an inverted index which maps each unique term to the list of documents that contain it.
+
+Indexing is the process of analyzing documents, extracting terms, and storing them in the index for fast retrieval.
+Stemming is a technique that reduces words to their root form so that run, running, and ran all match the same stem.
+Stop words are very common words like the, is, at, and on that are typically removed during indexing to save space.
+Tokenization is the process of splitting text into individual terms or tokens during the indexing and querying process.
+
+Precision measures the fraction of retrieved documents that are actually relevant to the search query.
+Recall measures the fraction of all relevant documents in the collection that were successfully retrieved.
+Precision at k, written as Precision@k, measures how many of the top k returned results are relevant.
+Mean Average Precision, known as MAP, evaluates ranking quality by averaging precision scores across multiple queries.
+The F1 score is the harmonic mean of precision and recall and provides a single balanced evaluation metric.
+
+Query expansion improves retrieval performance by adding synonyms or related terms to the original query.
+Relevance feedback allows users to mark results as relevant or irrelevant to refine the search results automatically.
+Elasticsearch and Apache Solr are modern production-grade search engines built on top of the Lucene library.

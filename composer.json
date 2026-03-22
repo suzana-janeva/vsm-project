@@ -1,0 +1,16 @@
+{
+    "name": "vsm/word-counter",
+    "description": "Vector Space Model - Word Counter with ZendSearch Lucene",
+    "type": "project",
+    "minimum-stability": "RC",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4",
+        "zendframework/zendsearch": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "VSM\\": "src/"
+        }
+    }
+}

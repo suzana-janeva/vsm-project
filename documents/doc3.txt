@@ -1,0 +1,38 @@
+Databases and Data Management
+==============================
+
+A database is an organized collection of structured information or data stored and accessed electronically from a computer system.
+Database management systems (DBMS) provide tools to create, retrieve, update, and delete data in a controlled and reliable way.
+The most common type of database is the relational database, which organizes data into tables with rows and columns.
+
+MySQL is one of the most popular open-source relational database management systems used in web development worldwide.
+PostgreSQL is an advanced open-source relational database that supports complex queries, JSON storage, and large datasets.
+SQLite is a lightweight, file-based relational database that requires no separate server process, making it ideal for small applications.
+
+SQL (Structured Query Language) is the standard language used to communicate with and manipulate relational databases.
+The SELECT statement is used to query data from one or more tables and is the most commonly used SQL command.
+JOIN operations in SQL allow combining rows from two or more tables based on a shared related column between them.
+The WHERE clause filters rows based on specified conditions, allowing precise control over which data is returned.
+
+Indexes in a database speed up query performance by allowing the database engine to locate rows without scanning the entire table.
+A primary key is a column or set of columns that uniquely identifies each row in a database table.
+A foreign key is a column that creates a link between two tables by referencing the primary key of another table.
+
+Transactions ensure data integrity by grouping multiple database operations into a single all-or-nothing atomic unit.
+ACID properties stand for Atomicity, Consistency, Isolation, and Durability, which are the principles of reliable transactions.
+Normalization is the process of organizing a relational database to reduce data redundancy and improve overall data integrity.
+
+NoSQL databases provide flexible schemas and horizontal scalability for applications that handle unstructured or semi-structured data.
+MongoDB is a popular document-oriented NoSQL database that stores data in flexible JSON-like BSON documents.
+Redis is an in-memory key-value store commonly used for caching, real-time analytics, session management, and message queuing.
+Cassandra is a distributed NoSQL database designed to handle very large amounts of data across many commodity servers.
+
+ORM (Object-Relational Mapping) frameworks allow developers to interact with databases using object-oriented code instead of raw SQL.
+Database replication creates synchronized copies of data across multiple servers for high availability and disaster recovery.
+Sharding is a horizontal scaling technique that distributes data across multiple database instances to handle large volumes.
+Stored procedures are precompiled SQL routines saved in the database and executed on demand to encapsulate business logic.
+
+Database backups are essential for disaster recovery and must be scheduled regularly to prevent catastrophic data loss.
+Query optimization involves analyzing execution plans and rewriting SQL queries to improve speed and reduce resource consumption.
+Connection pooling reuses existing database connections instead of opening new ones, significantly improving application performance.
+Data warehouses are specialized databases optimized for analytical queries and reporting on large volumes of historical data.
