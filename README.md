@@ -16,13 +16,13 @@ This project demonstrates how VSM works by allowing users to search a single wor
 
 ## Features
 
-- 🔍 Real-time word search across multiple documents
-- 📊 Displays TF, IDF, TF-IDF, and Cosine Similarity for each document
-- 📄 Shows a highlighted text snippet where the word was found
-- 🏆 Documents are ranked by TF-IDF score (most relevant first)
-- ⚠️ User-friendly warning when search input is empty
-- 🔠 Case-insensitive search (PHP = php = Php)
-- 🔡 Whole-word matching only (searching `dat` will not match `database`)
+-  Real-time word search across multiple documents
+-  Displays TF, IDF, TF-IDF, and Cosine Similarity for each document
+-  Shows a highlighted text snippet where the word was found
+-  Documents are ranked by TF-IDF score (most relevant first)
+-  User-friendly warning when search input is empty
+-  Case-insensitive search (PHP = php = Php)
+-  Whole-word matching only (searching `dat` will not match `database`)
 
 ---
 
@@ -67,8 +67,8 @@ vsm_project/
 
 ### Step 1 — Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/vsm_project.git
-cd vsm_project
+git clone https://github.com/suzana-janeva/vsm-project.git
+cd vsm-project
 ```
 
 ### Step 2 — Install dependencies
@@ -76,7 +76,7 @@ cd vsm_project
 composer install
 ```
 
-### Step 3 — Add your documents
+### Step 3 — Add documents
 Place `.txt` files inside the `documents/` folder.
 
 ### Step 4 — Build the Lucene index
@@ -89,7 +89,7 @@ php indexer.php
 php -S localhost:8000
 ```
 
-Open `http://localhost:8000` in your browser.
+Open `http://localhost:8000` in browser.
 
 ---
 
@@ -129,14 +129,3 @@ my_index/
 Run `composer install` after cloning to restore the `vendor/` folder.
 
 ---
-
-## Author
-
-**Suzana Janeva**
-- 🌐 [vsm.suzanajaneva.com](https://vsm.suzanajaneva.com)
-
----
-
-## License
-
-This project was created as a university seminar assignment demonstrating the Vector Space Model in information retrieval.
